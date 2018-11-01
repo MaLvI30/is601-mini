@@ -21,5 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contact', 'PageController@contact')->name('contact');
 Route::post('/contact', 'HomeController@store')->name('contact.store');
-//Route::get('/profile', 'HomeController@profile')->name('profile');
-//Route::get('/cars', 'CarsController@index')->name('cars');
+Route::get('/profile', 'HomeController@profile')->name('profile');
+Route::get('/cars', 'CarsController@index')->name('cars');
